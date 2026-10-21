@@ -1,0 +1,7 @@
+.DS_Store
+._*
+__MACOSX/
+.vscode/
+.env
+.env.*
+!.env.example
