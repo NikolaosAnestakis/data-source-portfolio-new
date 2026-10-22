@@ -114,3 +114,17 @@ html.ds-menu-ready { scrollbar-gutter: stable; }
 @media (prefers-reduced-motion: reduce) {
   .ds-menu-drawer[open].ds-menu-closing { animation: none; }
 }
+
+/* The X stays unboxed, including when the dialog focuses it automatically. */
+#ds-menu-close,
+#ds-menu-close:focus,
+#ds-menu-close:focus-visible {
+  outline: none;
+  border: 0;
+  box-shadow: none;
+}
+/* Indicate focus through the icon rather than a surrounding square. */
+#ds-menu-close:focus-visible .ds-menu-icon {
+  color: #073058;
+  filter: drop-shadow(0 0 2px currentColor);
+}
